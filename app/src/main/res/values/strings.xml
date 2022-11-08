@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AppFoot</string>
+    <string name="Inicio_de_app">FoodDelicious</string>
+    <string name="Delivery_inicio_app">Delivery Included</string>
+    <string name="Obtener_comida_inicio">Get food</string>
+
+
+    <string name="Bienvenida_Usario">Hi Welcome</string>
+    <string name="Bienvenida_2">At your Order</string>
+    <string name="Buscar_alimentos">Search you food</string>
+    <string name="Fecha_horario">Mar 27 - septimbre</string>
+    <string name="Entrega">Quick Delivery</string>
+    <string name="Orden">Order your</string>
+    <string name="Ctaegorias_de_Alimentos">Categories</string>
+    <string name="Ctaegorias_de_Populares">Popular</string>
+
+    <string name="carta">My Cart</string>
+    <string name="Item_total">Item Total</string>
+    <string name="Resultado_ITM">$0</string>
+    <string name="Delivery_service">Delivery Service</string>
+    <string name="Resuyltado_DS">$0</string>
+    <string name="Item_tax">Tax</string>
+    <string name="Resultado_Tax">$0</string>
+    <string name="Item_total_todo">Total</string>
+    <string name="Resultado_ITT">$0</string>
+    <string name="CheckOut">CheckOut</string>
+    <string name="Cart_empty">Your cart is empty</string>
+
+    strings para los recyclers adapter y viewholder
+
+    <string name="Recyclers">title</string>
+    <string name="Cantidad_viewholder">1</string>
+    <string name="Feeld_viewholder">0</string>
+    <string name="Signo_viewholder">$</string>
+    <string name="TotalEachItem">0</string>
+
+    <string name="agregar">+Add</string>
+    <string name="Cantidad_populares">0.0</string>
+
+    string para descriptiones de imagenes
+
+    <string name="picCart">picCart</string>
+
+
+</resources>

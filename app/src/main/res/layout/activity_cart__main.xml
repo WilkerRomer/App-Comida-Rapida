@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart_MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="847dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <include layout="@layout/toolbar_new" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/carta"
+                android:textAlignment="center"
+                android:textColor="#ff3d00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                tools:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textVi1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Item_total"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Resultado_ITM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                tools:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Delivery_service"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/taxTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Resuyltado_DS"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                tools:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tax1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Item_tax"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/totalTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Resultado_Tax"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                tools:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Item_total_todo"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/totalTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Resultado_ITT"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/checkOut"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="17dp"
+                android:background="@drawable/orange_boton"
+                android:gravity="center"
+                android:text="@string/CheckOut"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Emptytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cart_empty"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
